@@ -3,22 +3,40 @@
   flex-direction: column;
   padding: 20px;
   min-height: 800px;
+  background-color: #03091eb3;
+  width: min(80%, 600px);
 }
 
 .green {
   color: seagreen;
 }
 
+.background-green {
+  background-color: #83d988;
+}
+
 .red {
   color: tomato;
+}
+
+.white {
+  color: white;
+}
+
+.white.subtitle {
+  color: #8da2c0;
 }
 
 .orange {
   color: orange;
 }
 
+.background-darkblue {
+  background-color: #40587c;
+}
+
 .uppercase {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 a {
@@ -29,6 +47,11 @@ a {
 img {
   height: 64px;
   width: 64px;
+}
+
+.img-auto {
+  height: 100%;
+  width: 100%;
 }
 
 a:hover {
@@ -51,4 +74,145 @@ button {
 
 span {
   cursor: pointer;
+}
+
+.subtitle {
+  color: #0c163380;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p1 {
+  padding: 10px;
+}
+
+.p2 {
+  padding: 20px;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt05 {
+  margin-top: 5px;
+}
+
+.pb1 {
+  padding-bottom: 10px;
+}
+
+.pl4 {
+  padding-left: 40px;
+}
+
+.round-top1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.round-bottom1 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content10 {
+  box-sizing: border-box;
+  width: 10%;
+}
+
+.content20 {
+  box-sizing: border-box;
+  width: 20%;
+}
+
+.content70 {
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.content80 {
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.content90 {
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.list-element {
+  height: 77px;
+}
+
+.list-element:hover {
+  background-color: #637b9d;
+}
+
+.hiddenBtnContainer {
+  display: none;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn .infoBubble {
+  display: none;
+}
+
+.btn:hover .infoBubble {
+  display: flex;
+}
+
+.btn-square40 {
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.list-element:hover .hiddenBtnContainer {
+  display: block;
+}
+
+.infoBubble {
+  position: absolute;
+  top: calc(50% - 20px);
+  background-color: white;
+  border-radius: 5px;
+  width: max-content;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.infoBubbleLeft {
+  right: calc(100% + 10px);
+}
+
+.infoBubbleLeft:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  transform: rotate(90deg);
 }
