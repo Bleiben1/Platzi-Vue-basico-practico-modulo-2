@@ -2,7 +2,6 @@
   font-family: sans-serif;
   flex-direction: column;
   padding: 20px;
-  min-height: 800px;
   background-color: #03091eb3;
   width: min(80%, 600px);
 }
