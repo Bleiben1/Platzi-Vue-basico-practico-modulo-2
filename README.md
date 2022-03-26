@@ -21,3 +21,12 @@ Consideraciones:
   - Una propiedad computada totalTime que recorra toda la lista de cursos y retorne la suma del tiempo invertido en educacion.
   - Mostrar la lista de cursos tomados, con el titulo de los mismos y las horas de cada uno usando v-for.
   - Mostrar el total de horas con totalTime, en caso que no existan cursos se debe mostrar un mensaje indicandolo.
+
+
+## See it in action
+##### as of 26/03/22 (ddMMyy)
+
+
+
+https://user-images.githubusercontent.com/14260953/160247954-17f40458-261c-4a4e-a7bc-06d4de8150ab.mov
+
