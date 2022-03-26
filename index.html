@@ -14,40 +14,58 @@
       <header class="background-green p1 round-top1 flex">
         <img src="https://static.platzi.com/static/website/v2/images/avatar_default.png" alt="Platzi" class="img-auto content10">
         <div class="content90 p1">
-          <p class="text-white m0">Platzi</p>
-          <p class="text-white m0 mt1 subtitle">Cursos Online</p>
+          <p class="m0">Platzi</p>
+          <ul v-if="totalCourses > 0" class="m0 mt1 p0 subtitle horizontalList">
+            <li class="m0">{{totalCourses}} Cursos</li>
+            <li class="m0">100% Completados</li>
+            <li class="m0">Tiempo total: {{totalTime}}</li>
+          </ul>
+          <p v-if="totalCourses == 0" class="m0 subtitle">No existen cursos en la lista</p>
         </div>
       </header>
       <section class="background-darkblue pb1">
+        <div class="content100 p1 table-content">
+          <button v-on:click="addNewCourse" class="btn btn100 btn-border ligth-blue background-darkblue">
+            <p v-if="!showSave" class="bold uppercase m0">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              Agregar
+            </p>
+            <p v-if="showSave" class="bold uppercase m0">
+              <i class="fa fa-floppy-o" aria-hidden="true"></i>
+              Guardar
+            </p>
+          </button>
+          <input v-if="showSave" v-model="title" type="text" placeholder="Curso" class="m1 p1 content40 mt1 darkblue btn-border background-black">
+          <input v-if="showSave" v-model="time" type="text" placeholder="00:00:00" class="m1 p1 content40 mt1 darkblue btn-border background-black">
+          <p v-if="inputError" class="red bold m1">Por favor llene todos los campos disponibles</p>
+        </div>
         <ul class="p0">
           <li class="list-style-none list-element pl4">
             <div class="p1 flex">
               <img src="https://static.platzi.com/static/website/v2/images/avatar_default.png" alt="Platzi" class="img-auto content10">
               <div class="content70 p1">
-                <p class="white m0">Platzi</p>
-                <p class="white m0 mt1 subtitle">Cursos Online</p>
+                <p class="white m0">Curso de Platzi</p>
+                <p class="white m0 mt1 subtitle">Tiempo: 00:00:00</p>
               </div>
               <div class="content20 p1 flex hiddenBtnContainer">
-                <button class="btn btn-square40 white background-darkblue">
-                  <p class="text-white m0">
+                <button class="btn btn-square40 orange background-darkblue">
+                  <p class="m0">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
                   </p>
-                  <!-- <p class="text-white m0">
+                  <!-- <p class="m0">
                     <i class="fa fa-pause" aria-hidden="true"></i>
                   </p> -->
                   <div class="infoBubble infoBubbleLeft">
                     <p class="m0">Comenzar cronómetro para este curso</p>
+                    <!-- <p class="m0">Detener cronómetro</p> -->
                   </div>
                 </button>
-                <button class="btn btn-square40 white background-darkblue">
-                  <p class="text-white m0">
+                <button class="btn btn-square40 orange background-darkblue">
+                  <p class="m0">
                     <i class="fa fa-minus" style="text-shadow: none;"></i>
                   </p>
-                  <!-- <p class="text-white m0">
-                    <i class="fa fa-pause" aria-hidden="true"></i>
-                  </p> -->
                   <div class="infoBubble infoBubbleLeft">
-                    <p class="m0">00:00:00</p>
+                    <p class="m0">Eliminar curso</p>
                   </div>
                 </button>
               </div>

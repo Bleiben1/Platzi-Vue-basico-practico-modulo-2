@@ -31,8 +31,28 @@
   color: orange;
 }
 
+.ligth-blue {
+  color: #33b1ff;
+}
+
+.ligth-blue:hover {
+  color: #74caff;
+}
+
+.darkblue {
+  color: #40587c;
+}
+
 .background-darkblue {
   background-color: #40587c;
+}
+
+.background-black {
+  background-color: #03091e;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .uppercase {
@@ -96,8 +116,16 @@ span {
   margin: 0;
 }
 
+.m1 {
+  margin: 10px;
+}
+
 .mt05 {
   margin-top: 5px;
+}
+
+.mt1 {
+  margin-top: 10px;
 }
 
 .pb1 {
@@ -128,6 +156,16 @@ span {
   width: 20%;
 }
 
+.content40 {
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.content50 {
+  box-sizing: border-box;
+  width: 50%;
+}
+
 .content70 {
   box-sizing: border-box;
   width: 70%;
@@ -143,8 +181,18 @@ span {
   width: 90%;
 }
 
+.content100 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .flex {
   display: flex;
+}
+
+.table-content {
+  display: table;
+  text-align: center;
 }
 
 .list-style-none {
@@ -159,12 +207,33 @@ span {
   background-color: #637b9d;
 }
 
+.horizontalList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .hiddenBtnContainer {
   display: none;
 }
 
 .btn {
   position: relative;
+  border: none;
+}
+
+.btn100 {
+  width: 100%;
+}
+
+.btn-border {
+  border: 1px solid;
+}
+
+.input-border {
+  border: 1px solid;
 }
 
 .btn .infoBubble {
@@ -176,7 +245,6 @@ span {
 }
 
 .btn-square40 {
-  border: none;
   width: 40px;
   height: 40px;
 }
