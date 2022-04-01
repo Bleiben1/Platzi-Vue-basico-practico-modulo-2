@@ -10,7 +10,7 @@ En este ejercicio se solicita lo siguiente :
 
 - Armar un simple “tracker” de cursos, que permita calcular y registrar la cantidad cursos de Platzi tomados y obtener la suma de las horas invertidas en tu educacion.
 
-Haz fork de [este](https://platzi.com/clases/1752-vuejs2/24527-ejercicios-de-practica/#:~:text=Haz%20fork%20de-,este,-CodePen%20para%20obtener) CodePen para obtener la estructura basica del proyecto:
+Haz fork de [este](https://codepen.io/ianaya89/pen/YzzOEjK) CodePen para obtener la estructura basica del proyecto:
 
 Consideraciones:
 
